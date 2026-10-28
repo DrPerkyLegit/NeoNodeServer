@@ -1,0 +1,21 @@
+{
+  "name": "neo-node-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Lightweight NodeJS Server Software For NeoLegacy",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/src/main/server.js",
+    "test": "npm run build && node --test dist/src/test/*.test.js",
+    "test:load": "npm run build && node dist/src/test/performance-bots.js"
+  },
+  "engines": {
+    "node": ">=22.15"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}

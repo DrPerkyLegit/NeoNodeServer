@@ -1,0 +1,10 @@
+*.code-workspace
+/rewrite/dist
+/rewrite/plugins
+/rewrite/worlds
+/rewrite/node_modules
+
+/vibecode/dist
+/vibecode/worlds
+/vibecode/node_modules
+
